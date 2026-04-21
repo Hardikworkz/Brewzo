@@ -67,7 +67,7 @@ const VisitUs = () => {
 
         {/* Bottom Buttons */}
         <div className="hero-actions">
-          <button className="btn-green-location">GO TO ARERA COLONY LOCATION</button>
+          <a className="btn-green-location" href="https://www.google.com/maps/place/Brewzo+Cafe/@23.2149502,77.4328824,17z/data=!3m1!4b1!4m6!3m5!1s0x397c433251ebff51:0x43b0a7672908d556!8m2!3d23.2149502!4d77.4328824!16s%2Fg%2F11y464df2z?entry=ttu&g_ep=EgoyMDI2MDQxOS4wIKXMDSoASAFQAw%3D%3D">GO TO ARERA COLONY LOCATION</a>
       
         </div>
         

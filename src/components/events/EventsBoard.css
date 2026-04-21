@@ -26,8 +26,8 @@
   display: flex;
   justify-content: space-between;
   gap: clamp(20px, 4vw, 48px);
-   height: 224px;
-  padding:  0 40px;
+  min-height: clamp(180px, 22vw, 224px);
+  padding: clamp(24px, 3vw, 36px) clamp(16px, 4vw, 40px);
 }
 
 .events-header-content {
@@ -40,19 +40,19 @@
 .events-header .title-main {
   color: #4a3b32;
   font-family: 'Ying W01 Semi Bold', serif;
-  font-size: 58px;
+  font-size: clamp(2.5rem, 6vw, 58px);
   font-weight: 700;
-  text-wrap: nowrap;
   letter-spacing: -0.05rem;
-  
+  line-height: 0.94;
   margin: 0 0 18px;
-  max-width: 12ch;
+  max-width: 15ch;
+  text-wrap: balance;
 }
 
 .events-header .subtitle {
   color: #000000;
   font-family: "Inclusive Sans", sans-serif;
-  font-size: 16px;
+  font-size: clamp(0.95rem, 1.8vw, 16px);
   font-weight: 500;
   line-height: 1.35;
   margin: 0;
@@ -70,8 +70,8 @@
 
 .events-header-img img {
   display: block;
-  height: auto;
-  width: clamp(120px, 12vw, 176px);
+  height: 180px;
+  width: auto;
 }
 
 .events-header-bear {
@@ -126,7 +126,7 @@
 
 .standard-info .card-title {
   font-size: clamp(1.55rem, 3vw, 2.2rem);
-  max-width: 24ch;
+  max-width: 30ch;
 }
 
 .card-desc {
@@ -330,7 +330,7 @@
     align-items: flex-start;
     flex-direction: column;
     min-height: unset;
-    padding-inline: 20px;
+    padding: 20px;
   }
 
   .events-header .title-main {
@@ -402,5 +402,11 @@
   .action-tag {
     font-size: 11px;
     min-width: 76px;
+  }
+}
+
+@media (hover: none), (pointer: coarse) {
+  .events-header-bubble {
+    opacity: 1;
   }
 }

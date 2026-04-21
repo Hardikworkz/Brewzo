@@ -1,5 +1,6 @@
 @import url(https://db.onlinewebfonts.com/c/9dc20852411fd0907cf55db7bec41068?family=Ying+W01+Semi+Bold);
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital,wght@0,300..700;1,300..700&display=swap');
 
 .custom-footer-container {
   width: 100%;
@@ -31,6 +32,7 @@
 .footer-col {
   display: flex;
   flex-direction: column;
+  font-family: "Inclusive Sans";
 }
 
 .brand-contact-col {
@@ -206,7 +208,7 @@
 }
 
 .footer-dropdown li {
-  margin-bottom: 10px;
+  margin-bottom: 1px;
 }
 
 .footer-dropdown a {
@@ -280,6 +282,7 @@
   font-weight: 700;
   letter-spacing: -0.5px;
   overflow-wrap: anywhere;
+  
 }
 
 .playlist-meta p {
@@ -287,6 +290,7 @@
   color: rgba(255, 255, 255, 0.7);
   font-size: 14px;
   overflow-wrap: anywhere;
+  font-family: "Inclusive Sans";
 }
 
 .playlist-save {
@@ -295,7 +299,8 @@
   gap: 8px;
   color: #fff;
   font-size: 13px;
-  font-weight: 600;
+  font-weight: 500;
+  font-family: "Inclusive Sans";
 }
 
 .playlist-controls-row {
@@ -357,6 +362,7 @@
   background: #344046;
   padding: 12px 16px;
   overflow-y: auto;
+  font-family: "Inclusive Sans";
 }
 
 .track-row {
@@ -403,14 +409,14 @@
 }
 
 .explicit-pill {
-  width: 23px;
-  height: 23px;
+  width: 15px;
+  height: 15px;
   text-align: center;
   border-radius: 100%;
   background: rgba(255, 255, 255, 0.2);
-  font-size: 11px;
-  font-weight: 700;
-
+  font-size: 9px;
+  font-weight: 800;
+  padding-top: 1px;
 }
 
 .track-duration {
