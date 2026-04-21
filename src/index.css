@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap');
+
+:root {
+  --text: #6b4f40;
+  --text-h: #43271d;
+  --bg: #f2e8dc;
+  --border: rgba(90, 53, 38, 0.16);
+  --code-bg: #efe3d3;
+  --accent: #c44d13;
+  --accent-bg: rgba(196, 77, 19, 0.08);
+  --accent-border: rgba(196, 77, 19, 0.32);
+  --social-bg: rgba(255, 251, 246, 0.7);
+  --shadow: rgba(71, 42, 29, 0.08) 0 18px 40px -18px;
+
+  --sans: 'Fraunces', Georgia, serif;
+  --heading: 'Bree Serif', Georgia, serif;
+  --font-1: 'Bree Serif', Georgia, serif;
+  --font-2: 'Fraunces', Georgia, serif;
+  --mono: ui-monospace, Consolas, monospace;
+
+  font: 18px/145% var(--sans);
+  letter-spacing: 0.18px;
+  color: var(--text);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @media (max-width: 1024px) {
+    font-size: 16px;
+  }
+}
+
+body {
+  margin: 0;
+}
+
+#root {
+  min-height: 100svh;
+}
+
+h1,
+h2 {
+  font-family: var(--heading);
+  font-weight: 500;
+  color: var(--text-h);
+}
+
+h1 {
+  font-size: 56px;
+  letter-spacing: -1.68px;
+  margin: 32px 0;
+  @media (max-width: 1024px) {
+    font-size: 36px;
+    margin: 20px 0;
+  }
+}
+h2 {
+  font-size: 24px;
+  line-height: 118%;
+  letter-spacing: -0.24px;
+  margin: 0 0 8px;
+  @media (max-width: 1024px) {
+    font-size: 20px;
+  }
+}
+p {
+  margin: 0;
+}

@@ -1,0 +1,71 @@
+@font-face {
+  font-family: 'inclusive';
+  src: url('../../assets/inclusivee.woff2') format('woff2');
+  font-display: swap;
+}
+
+.demo-header {
+  background: rgba(252, 250, 245, 0.94);
+  border-bottom: 1px solid rgba(74, 59, 50, 0.12);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  backdrop-filter: blur(14px);
+}
+
+.demo-header__inner {
+  align-items: center;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1440px;
+  padding: 16px clamp(16px, 4vw, 40px);
+}
+
+.demo-header__brand {
+  color: #4a2e1b;
+  font-family: 'Ying W01 Semi Bold', serif;
+  font-size: clamp(1.6rem, 2.5vw, 2.2rem);
+  letter-spacing: -0.03em;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.demo-header__nav {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.demo-header__link {
+  border: 1px solid rgba(74, 59, 50, 0.14);
+  border-radius: 999px;
+  color: #5f4638;
+  font-family: 'inclusive', sans-serif;
+  font-size: 0.88rem;
+  letter-spacing: 0.12em;
+  padding: 10px 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.demo-header__link:hover,
+.demo-header__link-active {
+  background: #c96a15;
+  border-color: #c96a15;
+  color: #fffaf2;
+}
+
+@media (max-width: 640px) {
+  .demo-header__inner {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .demo-header__nav {
+    width: 100%;
+  }
+}

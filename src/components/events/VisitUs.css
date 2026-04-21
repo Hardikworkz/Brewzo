@@ -1,0 +1,159 @@
+@import url(https://db.onlinewebfonts.com/c/9dc20852411fd0907cf55db7bec41068?family=Ying+W01+Semi+Bold);
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital,wght@0,300..700;1,300..700&display=swap');
+
+.hero-container {
+  height: clamp(420px, 72vw, 647px);
+  margin-bottom: clamp(56px, 8vw, 100px);
+  min-height: clamp(420px, 72vw, 647px);
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.hero-background {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  inset: 0;
+  position: absolute;
+  transform-origin: center center;
+  z-index: 1;
+}
+
+.hero-background img {
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+}
+
+.hero-overlay {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.1) 50%);
+  inset: 0;
+  position: absolute;
+  z-index: 2;
+}
+
+.hero-content {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: clamp(20px, 4vw, 32px);
+  height: 100%;
+  justify-content: space-between;
+  padding: clamp(24px, 5vw, 60px);
+  position: relative;
+  width: 100%;
+  z-index: 3;
+}
+
+.hero-text-block {
+  max-width: min(600px, 100%);
+}
+
+.hero-title-row {
+  align-items: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  gap: clamp(12px, 2vw, 20px);
+  margin-bottom: 12px;
+  width: 100%;
+}
+
+.hero-title-row h1 {
+  color: #f7f5ee;
+  font-family: 'Ying W01 Semi Bold';
+  font-size: clamp(2.5rem, 7vw, 60px);
+  font-weight: 500;
+  letter-spacing: -1px;
+  line-height: 0.95;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  width: auto;
+}
+
+.bike-logo-placeholder {
+  color: white;
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.3));
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  min-height: 1em;
+}
+
+.hero-text-block p {
+  color: #ffffff;
+  font-family: "Inclusive Sans", sans-serif;
+  font-size: clamp(1rem, 2vw, 16px);
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  line-height: 1.45;
+  margin: 0;
+  max-width: 34ch;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 0;
+}
+
+.hero-actions button {
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  font-family: "Inclusive Sans", sans-serif;
+  font-size:12px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 1.25;
+  max-width: 100%;
+  height: 24px;
+  padding: 4px 7px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: opacity 0.2s ease;
+  white-space: normal;
+  width: auto;
+}
+
+.hero-actions button:hover {
+  opacity: 0.85;
+}
+
+.btn-green-location {
+  background-color: #b53815;
+  color: #ffffff;
+}
+
+.btn-state-location {
+  background-color: #ffbe76;
+  color: #2d2d2d;
+}
+
+@media (max-width: 768px) {
+  .hero-overlay {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.42) 0%, rgba(0, 0, 0, 0.18) 58%, rgba(0, 0, 0, 0.1) 100%);
+  }
+
+  .hero-content {
+    justify-content: flex-end;
+  }
+
+  .hero-text-block p {
+    max-width: none;
+  }
+}
+
+@media (max-width: 540px) {
+  .hero-container {
+    height: 460px;
+    min-height: 460px;
+  }
+
+  .hero-actions button {
+    width: 100%;
+  }
+}
